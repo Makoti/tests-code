@@ -1,0 +1,103 @@
+h1 {
+  color: blue;
+}
+/*CREER UNE VARIABLE*/
+--standard-widht: 100%;
+--standard-height: 200px;
+/*COULEURS*/
+#color-red{
+  color: red;
+  /*Quelques couleurs : blue / green / silver / pink / orange / black / white / brown*/
+}
+#RGB-red{
+  color: rgb(255,0,0);
+  /*Chaque élément va de 0 à 255 */
+}
+#RGBA-red{
+  color: rgba(255, 0, 0, 0.5);
+  /*Trois premiers éléments = rgb + Alpha = opacity de 0 à 1*/
+}
+#HSL-red{
+  color: hsl(0, 100%, 50%);
+  /*Hue (position dans le spectre lumineux de 0 à 360)
+  Saturation (de 0% à 100%)
+  Lightness (de 0% à 100% : 50% = couleur >50% couleur + blanc / <50% couleur + noir)*/
+}
+#background-simple{
+  background-color: hsla(69, 100%, 50%, 0.5);
+}
+#image-pattern{
+  height: 100px;
+}
+#pattern{
+  font-size: 25px;
+  color: rgba(0, 255, 0, 0.9);
+  width: var(--standard-widht);
+  height: var(--standard-height);
+  margin: 20px 20px;
+  background: url(pattern-1.png);
+  /*Utiliser une image de pattern pour qu'il y ait répétition et remplissage*/
+}
+#linear-gradient-background{
+  font-size: 25px;
+  color: white;
+  width: 70%;
+  height: 1em;
+  margin: 20px 20px;
+  background: linear-gradient(35deg, red, blue, green, yellow)
+  /*degré de 6360 à 360, enchainement de couleurs*/
+}
+#repeating-linear-gradient-background{
+  font-size: 25px;
+  color: white;
+  width: 70%;
+  height: 1em;
+  margin: 20px 20px;
+  background: repeating-linear-gradient(-35deg, red 0px, blue 15px, green 15px, green 25px)
+  /*l'enchainement de couleurs se répéte, dégradé entre les différents points définis*/
+}
+/*CSS FLEX*/
+#css-flex{
+  height: 250px;
+  width: 50%%;
+  display: flex;
+  flex-direction: row-reverse;
+  /*flex-direction : column; / row; / row-reverse; manière d'enchainer les éléments*/
+  justify-content: space-around;
+  /*justify-content: center; flex-start; flex-end; space-between; space-around; space-evenly;*/
+  align-items: flex-start;
+  /*align-items: flex-start; / flex-end; center; stretch; baseline; manière de disposer les éléments dans l'axe opposé à leur axe direction*/
+  /*flex-wrap: nowrap; wrap; wrap-reverse*/
+}
+#box1{
+  font-size: 25px;
+  color: white;
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+}
+#box2{
+  font-size: 5em;
+  color: white;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#box21{
+  font-size: 25px;
+  color: white;
+  width: 30%;
+  height: 30%;
+  background-color: yellow;
+}
+#box22{
+  font-size: 25px;
+  color: white;
+  width: 30%;
+  height: 30%;
+  background-color: green;
+
+}
