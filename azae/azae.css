@@ -24,6 +24,11 @@ main{
   padding-top: 3px;
 }
 
+.texte-justify1{
+  text-align: justify;
+  padding-top: 3px;
+}
+
 .synthese{
   clear: both;
   margin: 0.5em;
@@ -40,12 +45,12 @@ h1, h2, h3{
 
 header{
   background: rgba(240,182,95,0.2);
-  margin: 0px;
+  max-width: 80em;
+  margin: auto;
 }
 
 nav{
   color: black;
-  margin: 0px;
   background: rgba(240,182,95,0.6);
   padding-top: 2px;
   padding-bottom: 2px;
