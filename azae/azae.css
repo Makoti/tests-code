@@ -1,0 +1,51 @@
+#logoazae{
+ width: 350px;
+}
+
+.photo-membre{
+  float: left;
+  margin: 1em;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.texte-justify{
+  text-align: justify;
+  border: 1px rgba(240,182,95,0.6) solid;
+  padding-top: 3px;
+}
+
+.synthese{
+  clear: both;
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1.2em;
+  background: rgba(240,182,95,0.6);
+  box-shadow: 6px 6px 6px orange;
+  border-radius: 10px;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+header{
+  background: rgba(240,182,95,0.2);
+  margin: 0px;
+}
+
+nav{
+  color: black;
+  margin: 0px;
+  background: rgba(240,182,95,0.6);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav div{
+  padding: 0.5em;
+  border: 2px solid orange;
+}
